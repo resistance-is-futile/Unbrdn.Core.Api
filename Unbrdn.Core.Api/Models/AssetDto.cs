@@ -2,10 +2,10 @@
 {
     public class AssetDto
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }  // GUID as primary key
         public string? Name { get; set; }
         public decimal Value { get; set; }
-        public string? Category { get; set; }  // e.g., "Real Estate", "Financial", "Personal"
+        public string? Category { get; set; }
         public string? Description { get; set; }
     }
 }

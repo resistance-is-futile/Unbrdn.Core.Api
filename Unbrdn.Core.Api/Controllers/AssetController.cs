@@ -25,29 +25,26 @@ namespace Unbrdn.Core.Api.Controllers
             return Ok(new List<AssetDto>());
         }
 
-        [HttpGet("{id}")]
-        public IActionResult GetAssetById(int id)
+        [HttpGet("{id:guid}")]
+        public IActionResult GetAssetById(Guid id)
         {
-            // Placeholder logic to retrieve asset by id
+            // Logic to retrieve asset by GUID
             return Ok(new AssetDto { Id = id });
         }
 
-        [HttpPut("{id}")]
-        public IActionResult UpdateAsset(int id, [FromBody] AssetDto asset)
+        [HttpPut("{id:guid}")]
+        public IActionResult UpdateAsset(Guid id, [FromBody] AssetDto asset)
         {
-            if (string.IsNullOrEmpty(asset.Category))
-            {
-                return BadRequest("Asset category is required.");
-            }
-            // Placeholder logic to update asset
+            // Logic to update asset by GUID
             return NoContent();
         }
 
-        [HttpDelete("{id}")]
-        public IActionResult DeleteAsset(int id)
+        [HttpDelete("{id:guid}")]
+        public IActionResult DeleteAsset(Guid id)
         {
-            // Placeholder logic to delete asset
+            // Logic to delete asset by GUID
             return NoContent();
         }
+
     }
 }

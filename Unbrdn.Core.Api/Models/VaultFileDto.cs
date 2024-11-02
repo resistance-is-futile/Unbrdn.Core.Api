@@ -2,11 +2,11 @@
 {
     public class VaultFileDto
     {
-        public int FileId { get; set; }
+        public Guid FileId { get; set; }  // GUID as primary key
         public string? FileName { get; set; }
         public DateTime UploadDate { get; set; }
         public DateTime? LastAccessed { get; set; }
-        public string? FileType { get; set; }  // e.g., "pdf", "jpg", "docx"
+        public string? FileType { get; set; }
         public long FileSize { get; set; }
     }
 }

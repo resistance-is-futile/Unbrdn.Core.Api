@@ -2,8 +2,7 @@
 {
     public class UserRegistrationDto
     {
-        // Define properties for user registration, for example:
-        public int UserId { get; set; }
+        public Guid UserId { get; set; }  // GUID as primary key
         public string? Username { get; set; }
         public string? Password { get; set; }
         public string? Email { get; set; }

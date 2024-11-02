@@ -2,6 +2,8 @@
 {
     public class AccountDto
     {
-        // Define properties for AccountDto
+        public Guid Id { get; set; }  // GUID as primary key
+        public string? Name { get; set; }
+        public AccountSettingsDto? Settings { get; set; }
     }
 }

@@ -17,7 +17,7 @@ namespace Unbrdn.Core.Api.Controllers
 
             var vaultFile = new VaultFileDto
             {
-                FileId = new Random().Next(1000, 9999), // Temporary ID generation
+                FileId = Guid.NewGuid(), // Temporary ID generation
                 FileName = file.FileName,
                 UploadDate = DateTime.UtcNow,
                 FileType = System.IO.Path.GetExtension(file.FileName)?.TrimStart('.'),
@@ -30,7 +30,7 @@ namespace Unbrdn.Core.Api.Controllers
         }
 
         [HttpGet("{fileId}")]
-        public IActionResult DownloadFile(int fileId)
+        public IActionResult DownloadFile(Guid fileId)
         {
             // Placeholder logic to retrieve file and update last accessed
             var vaultFile = new VaultFileDto
