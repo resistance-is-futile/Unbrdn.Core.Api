@@ -1,0 +1,6 @@
+@Unbrdn.Core.Api_HostAddress = http://localhost:5184
+
+GET {{Unbrdn.Core.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

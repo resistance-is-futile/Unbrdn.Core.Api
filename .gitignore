@@ -1,0 +1,31 @@
+
+# Build Folders
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.orig
+
+# OS Generated files
+.DS_Store
+Thumbs.db
+
+# JetBrains Rider files
+.idea/
+
+# Visual Studio
+.vs/
+.vscode/
+
+# Logs
+*.log
+
+# Other backup files
+*.bak
+*.tmp
+*.old
+
